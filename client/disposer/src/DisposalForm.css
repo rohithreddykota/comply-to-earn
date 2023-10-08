@@ -9,17 +9,19 @@
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-left: -350px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     color: #3a33ff;
     padding: 7px;
+
     font-weight: bold;
 }
 
@@ -27,6 +29,7 @@ select {
     width: calc(100% - 10px);
     padding: 10px;
     font-size: 16px;
+    margin-left: -350px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 0px;
@@ -69,7 +72,7 @@ input {
     background-color: #007bff;
     /* Blue color for the button */
     margin-top: 10px;
-    margin-left: 108px;
+    margin-left: 0px;
 
 }
 
@@ -82,9 +85,10 @@ input {
     background-color: #f2f6f6;
     color: #000;
     border: 1px solid #000;
+    margin-left: -350px;
     /* Black border */
     margin-top: 3px;
-    padding: 5px 14px;
+    padding: 7px 15px;
     /* Reduced padding */
     cursor: pointer;
     border-radius: 5px;
@@ -100,6 +104,7 @@ input {
 /* Style for the date picker button */
 .react-datepicker-wrapper {
     display: block;
+    margin-left: -350px;
     width: 94%;
 }
 
@@ -134,4 +139,76 @@ input {
 /* Optional: Customize the appearance of the date picker disabled dates */
 .react-datepicker__day--disabled {
     color: #ccc;
+}
+
+/* AddressForm.css */
+
+.address-form {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3a33ff;
+    padding: 9px;
+
+    font-weight: bold;
+    margin-top: -327px;
+}
+
+/* AddressForm.css */
+
+.custom-zipcode .form-label {
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.custom-zipcode .form-control {
+    /* styles for Zipcode input */
+    padding: 10px;
+    margin-left: 80px;
+
+    margin-top: -150px;
+
+
+}
+
+.custom-street .form-label {
+    font-weight: bold;
+    margin-left: 80px;
+
+}
+
+.custom-street .form-control {
+    /* styles for Street Name input */
+    margin-left: 80px;
+    padding: 10px;
+
+
+}
+
+.custom-country .form-label {
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.custom-country .form-control {
+    margin-left: 80px;
+    /* styles for Country input */
+    padding: 10px;
+    margin-left: 80px;
+
+
+}
+
+.custom-state .form-label {
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.custom-state .form-control {
+    /* styles for State input */
+    padding: 10px;
+
+    margin-left: 80px;
+
 }
