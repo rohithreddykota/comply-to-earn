@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { FaSpinner, FaRecycle, FaTrash, FaLeaf, FaComment, FaUsers, FaHistory, FaDollarSign } from 'react-icons/fa';
-
 import Dustbin from './Dustbin';
 import DisposalForm from './DisposalForm';
 import EducationalResources from './EducationalResources';
@@ -48,10 +47,7 @@ const App = () => {
               <Dustbin key={index} color={dustbin.color} items={dustbin.items} textColor={dustbin.textColor} />
             ))}
           </div>
-          <div className="search-container">
-            <input type="text" placeholder="Search..." className="search-input" />
-            <button className="search-button">Search</button>
-          </div>
+
           <div className="form-container">
             <DisposalForm />
           </div>
