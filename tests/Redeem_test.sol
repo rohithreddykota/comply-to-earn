@@ -22,8 +22,8 @@ contract RedeemTest is Redeem {
     }
 
     function testTokenInitialValues() public {
-        Assert.equal(name(), "Compliant", "token name did not match");
-        Assert.equal(symbol(), "CAE", "token symbol did not match");
+        Assert.equal(name(), "Redeem", "token name did not match");
+        Assert.equal(symbol(), "RED", "token symbol did not match");
         Assert.equal(decimals(), 18, "token decimals did not match");
         Assert.equal(totalSupply(), 0, "token supply should be zero");
     }
