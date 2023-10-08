@@ -1,15 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Redeem is Ownable {
+contract Redeem is Ownable, ERC20, ERC20Burnable {
     ERC20Burnable public compliantToken;  // Reference to the ItemSaleToken contract
 
     event TokensRedeemed(address indexed seller, uint256 amount);
 
-    constructor(address _compliantTokenAddress) {
+    constructor(address _compliantTokenAddress) ERC20("Redeem", "REDM") {
         compliantToken = ERC20Burnable(_compliantTokenAddress);
     }
 
