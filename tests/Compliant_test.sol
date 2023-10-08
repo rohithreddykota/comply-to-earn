@@ -28,4 +28,8 @@ contract CompliantTest is Compliant {
         Assert.equal(totalSupply(), 0, "token supply should be zero");
     }
 
+    function testSendRequest() public {
+        Assert.equal(sendRequest("Gloves", "", "Gloves Used", "Operated Waste", "Harvard"), "Must not return anything");
+    }
+
 }
