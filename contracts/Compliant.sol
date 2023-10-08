@@ -21,6 +21,7 @@ contract Compliant is ERC20("Compliant", "CAE"), ERC20Burnable, Ownable {
         string itemName;
         string description;
         string itemCategory;
+        string requestAddress;
         bool verified;
     }
 
@@ -35,9 +36,9 @@ contract Compliant is ERC20("Compliant", "CAE"), ERC20Burnable, Ownable {
     }
 
     // Function for a disposer to send a request to the collector
-    function sendRequest(string memory itemType, string memory itemName, string memory description, string memory itemCategory) external {
+    function sendRequest(string memory itemType, string memory itemName, string memory description, string memory itemCategory, string memory requestAddress) external {
         require(itemValues[itemType] > 0, "Invalid item type");
-        DisposeRequest memory newRequest = DisposeRequest(msg.sender, itemType, itemName, description, itemCategory, false);
+        DisposeRequest memory newRequest = DisposeRequest(msg.sender, itemType, itemName, description, itemCategory, requestAddress, false);
         disposeRequests[msg.sender].push(newRequest);
         emit ItemRequested(msg.sender, itemType, itemName, description, itemCategory);
     }
