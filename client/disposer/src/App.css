@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  color: #3a33ff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: -210px;
+}
+
+.spinner {
+  font-size: 48px;
+  color: #3498db;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.recycle-icon {
+  position: absolute;
+  top: 30px;
+  left: 440px;
+  font-size: 50px;
+  color: #4234db;
+  cursor: pointer;
+  animation: rotate 2s linear infinite;
+}
+
+.recycle-icon:hover {
+  animation: rotate 2s ease infinite, bounce 0.5s ease;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.trash-can-logo:hover {
+  color: #3ce7e7;
+}
+
+.trash-can-logo {
+  font-size: 26px;
+  top: 115px;
+  color: #3934db;
+  left: 650px;
+  transition: color 0.3s ease;
+  position: absolute;
+  animation: moveTrashCan 2s ease infinite;
+}
+
+@keyframes moveTrashCan {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.leaf {
+  font-size: 21px;
+  top: 115px;
+  color: #055828;
+  position: absolute;
+  animation: fallLeaf 2s ease-in-out infinite;
+}
+
+@keyframes fallLeaf {
+  0% {
+    top: 10;
+    left: 50%;
+  }
+
+  100% {
+    left: 650px;
+  }
+}
+
+.leaf:hover {
+  transform: scale(1.2);
+  color: #29f47e;
+  transition: transform 0.3s ease;
+}
+
+.dustbin-container {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  z-index: 1;
+}
+
+.dustbin {
+  width: 250px;
+  height: 120px;
+  font-size: 150px;
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.red {
+  color: white;
+}
+
+.blue {
+  color: rgb(29, 25, 135);
+}
+
+.white {
+  color: rgb(229, 56, 56);
+}
+
+.yellow {
+  color: rgb(235, 248, 53);
+}
+
+.black {
+  color: rgb(8, 8, 3);
+}
+
+.dustbin-text {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Add styles for the sidebar */
+.sidebar {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+/* Style for individual icons */
+.icon {
+  background-color: #5be359;
+  color: rgb(49, 15, 218);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Icon hover effect */
+.icon:hover {
+  background-color: #59d5de;
+  /* Darker blue shade */
+  transform: scale(1.1);
+  /* Scale up the icon on hover */
+}
