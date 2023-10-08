@@ -7,12 +7,22 @@
     "test": "tests"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.2"
+    "@openzeppelin/contracts": "^4.8.2",
+    "@ethersproject/providers": "^5.7.2",
+    "@vechain/connex-driver": "^2.0.12",
+    "@vechain/connex-framework": "^2.0.12",
+    "@vechain/web3-providers-connex": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-json-rpc-router": "^1.4.0",
+    "rpc-websockets": "^7.5.1",
+    "thor-devkit": "^2.0.7"
   }
 }
