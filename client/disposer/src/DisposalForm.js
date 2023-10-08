@@ -5,7 +5,21 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './DisposalForm.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Provider, Connex } from '@vechain/web3-providers-connex'
 
+// connexObj is an instance of Connex
+const provider = new Provider({connex: new Connex.Thor({
+    node: 'http://localhost:8545'
+})})
+const balance = await provider.request({ 
+  method: 'eth_getBalance', 
+  params: ['0x...'] 
+})
+
+
+const thor = new Connex.Thor({
+    node: 'http://localhost:8545'
+})
 
 const DisposalForm = () => {
     const [categories, setCategories] = useState([{ id: 1, name: '', items: [''] }]);
