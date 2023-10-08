@@ -28,4 +28,9 @@ contract CompliantTest is Compliant {
         Assert.equal(totalSupply(), 0, "token supply should be zero");
     }
 
+    function testTokenMinting() public {
+        Assert.equal(balanceOf(acc0), 0, "token balance should be zero initially");
+        mint(acc0, 10000);
+        Assert.equal(balanceOf(acc0), 10000, "token balance did not match");
+    }
 }
