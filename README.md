@@ -10,6 +10,14 @@
 
 ![vechain-testnet-contract](vechain-testnet-contract.png)
 
+## Disposer Application
+
+![Disposer Application](disposer-app.png)
+
+## Collector Application
+
+![Collector Application](collector-app.png)
+
 ## What it does:
 
 "ComplyTech" is a platform that streamlines and incentivizes the proper incineration of medical waste. It encompasses a range of features and functionalities:
@@ -38,7 +46,7 @@
 
 VechainThor blockchain technology plays a pivotal role in the project:
 
-Smart Contracts: Smart contracts automate the verification of compliance criteria and the distribution of Vechain tokens, reducing administrative overhead. 
+Smart Contracts: Smart contracts automate the verification of compliance criteria and the distribution of Vechain tokens, reducing administrative overhead.
 
 Tokenization: Vechain tokens serve as a valuable incentive, aligning the interests of healthcare institutions, waste management entities, and individuals with responsible waste disposal practices.
 
@@ -59,7 +67,6 @@ Transparency: The transparent nature of VechainThor enables all stakeholders to 
 6. VechainThor Cryptocurrency (Thor): While not explicitly mentioned in the project description, Thor is the native cryptocurrency of the VechainThor blockchain. It may be used to pay for transaction fees incurred during interactions with the blockchain, such as deploying smart contracts or minting tokens.
 
 7. Security and Consensus: VechainThor employs a Proof of Authority (PoA) consensus mechanism, which enhances security and scalability. This ensures that the project's data and smart contracts are secure and reliable.
-
 
 ## How The Problem Can Be Solved Using Vechain
 
@@ -91,7 +98,6 @@ Transparency: The transparent nature of VechainThor enables all stakeholders to 
 
 The desposer can then use these tokens as digital vouchers when it's time for taxation.
 The tokens serve as a valuable asset that can offset taxes owed, providing financial relief to the desposer while also incentivizing proper waste disposal practices.
-
 
 ## Link To Slides
 
