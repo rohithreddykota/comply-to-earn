@@ -51,3 +51,28 @@ input {
 }
 
 /* Add more styles as needed */
+/* DisposalForm.css */
+.cardbody {
+    padding: 0px;
+}
+
+.cardbody h2 {
+    font-size: 18px;
+    /* You can adjust the font size as needed */
+    margin-bottom: 8px;
+    /* Optional: Add some space below h2 */
+}
+
+.cardbody h3 {
+    font-size: 16px;
+    /* You can adjust the font size as needed */
+    margin-bottom: 6px;
+    /* Optional: Add some space below h3 */
+}
+
+.cardbody h4 {
+    font-size: 14px;
+    /* You can adjust the font size as needed */
+    margin-bottom: 4px;
+    /* Optional: Add some space below h4 */
+}

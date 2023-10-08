@@ -3,7 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './DisposalForm.css';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -202,6 +202,7 @@ const DisposalForm = () => {
                         <Button className='mt-3 dispose-button schedule-button' variant="primary" type="submit">
                             Schedule Disposal
                         </Button>
+                        <ToastContainer />
                     </Form>
                 </div>
             </div>
