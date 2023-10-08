@@ -1,0 +1,137 @@
+/* DisposalForm.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+.h2 {
+    color: #3a33ff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3a33ff;
+    padding: 7px;
+    font-weight: bold;
+}
+
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+
+.dispose-button {
+    margin-top: 20px;
+    /* Adjust the top margin as needed */
+    background-color: #28a745;
+    /* Green color for the button */
+    color: #fff;
+    /* White text color */
+    border: none;
+    /* Remove button border */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    cursor: pointer;
+    /* Show hand cursor on hover */
+    border-radius: 5px;
+    /* Optional: Add border-radius for rounded corners */
+}
+
+.dispose-button:hover {
+    background-color: #218838;
+    /* Darker green color on hover */
+}
+
+/* Add more styles as needed */
+.schedule-button {
+    background-color: #007bff;
+    /* Blue color for the button */
+    margin-top: 10px;
+    margin-left: 108px;
+
+}
+
+.schedule-button:hover {
+    background-color: #0056b3;
+    /* Darker blue color on hover */
+}
+
+.add-more-button {
+    background-color: #f2f6f6;
+    color: #000;
+    border: 1px solid #000;
+    /* Black border */
+    margin-top: 3px;
+    padding: 5px 14px;
+    /* Reduced padding */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-more-button:hover {
+    background-color: #007bff;
+    /* Darker yellow color on hover */
+}
+
+/* DisposalForm.css */
+
+/* Style for the date picker button */
+.react-datepicker-wrapper {
+    display: block;
+    width: 94%;
+}
+
+/* Optional: Customize the appearance of the date picker input field */
+.react-datepicker__input-container {
+    width: 100%;
+}
+
+/* Optional: Customize the appearance of the date picker calendar */
+.react-datepicker__portal {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Optional: Customize the appearance of the date picker calendar header */
+.react-datepicker__header {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Optional: Customize the appearance of the date picker selected date */
+.react-datepicker__day--selected {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Optional: Customize the appearance of the date picker today's date */
+.react-datepicker__day--today {
+    font-weight: bold;
+}
+
+/* Optional: Customize the appearance of the date picker disabled dates */
+.react-datepicker__day--disabled {
+    color: #ccc;
+}

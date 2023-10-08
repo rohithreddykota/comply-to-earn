@@ -1,0 +1,40 @@
+/* styles.css */
+
+.educational-resources-container {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    background-color: linear-gradient(to right, #4c11ab, #306add);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(17, 1, 1, 0.1);
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.educational-resources h2 {
+    font-size: 24px;
+    color: #1462e0;
+    margin-bottom: 20px;
+}
+
+.educational-resources p {
+    font-size: 16px;
+    color: #020913;
+    margin-bottom: 20px;
+}
+
+.educational-resources ul li a {
+    font-size: 14px;
+    color: #5c4ee3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.educational-resources ul li a:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+}

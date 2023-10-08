@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Waste Management App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hospital Waste Management App</h1>
+    </header>
+
+    <div class="container">
+      <div class="form">
+        <h2>Record Waste Disposal</h2>
+        <label for="hospital">Hospital Name:</label>
+        <input type="text" id="hospital" placeholder="Enter hospital name" />
+
+        <label for="type">Waste Type:</label>
+        <select id="type">
+          <option value="medical">Medical Waste</option>
+          <option value="hazardous">Hazardous Waste</option>
+        </select>
+
+        <label for="quantity">Quantity (in kg):</label>
+        <input type="number" id="quantity" placeholder="Enter quantity" />
+
+        <button onclick="recordWaste()">Record Disposal</button>
+      </div>
+
+      <div class="output">
+        <h2>Recent Waste Disposals</h2>
+        <ul id="disposalList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
