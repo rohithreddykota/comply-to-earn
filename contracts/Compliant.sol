@@ -55,10 +55,10 @@ contract Compliant is ERC20("Compliant", "CAE"), ERC20Burnable, Ownable {
     }
 
     // Function for a collector to verify the item and mint the token
-    function verifyAndMintToken(address disposer, uint256 amount) external {
+    function verifyAndMintToken(address disposer, uint256 amount) external onlyOwner {
         require(itemValues[disposeRequests[disposer][0].itemType] == amount, "Invalid amount");
         DisposeRequest storage request = disposeRequests[disposer][0];
-        require(request.disposer == disposer && !request.verified, "Invalid sale request");
+        require(request.disposer == disposer && !request.verified && disposer != msg.sender, "Invalid sale request");
 
         // Mint tokens and transfer to the collector
         _mint(msg.sender, amount);
