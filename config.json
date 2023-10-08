@@ -1,8 +1,8 @@
 {
-  "url": "http://127.0.0.1:8669",
+  "url": "https://testnet.vecha.in",
   "port": 8545,
   "accounts": {
-    "mnemonic": "denial kitchen pet squirrel other broom bar gas better priority spoil cross",
+    "mnemonic": "myth average opinion increase talent napkin color thrive wing cycle maximum limit",
     "count": 10
   }
 }
