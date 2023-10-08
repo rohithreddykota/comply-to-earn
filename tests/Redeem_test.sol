@@ -7,6 +7,8 @@ import "../contracts/Redeem.sol";
 
 contract RedeemTest is Redeem {
 
+    constructor(address _compliantUser) Redeem(_compliantUser) {}
+
     address acc0;
     address acc1;
     address acc2;

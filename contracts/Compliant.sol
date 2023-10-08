@@ -2,9 +2,10 @@
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Compliant is ERC20("Compliant", "CAE"), Ownable {
+contract Compliant is ERC20("Compliant", "CAE"), ERC20Burnable, Ownable {
     // Mapping to store the item type and its fixed price
     mapping(string => uint256) public itemValues;
 
