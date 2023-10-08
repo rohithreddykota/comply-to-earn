@@ -29,7 +29,7 @@ contract CompliantTest is Compliant {
     }
 
     function testSendRequest() public {
-        Assert.equal(sendRequest("Gloves", "", "Gloves Used", "Operated Waste", "Harvard"), "", "Must not return anything");
+        Assert.equal(sendRequest("Gloves", "", "Gloves Used", "Operated Waste", "Harvard"), "Must not return anything");
     }
 
 }
